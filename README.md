@@ -1,5 +1,5 @@
 
-Frontend URL : pp.netlify.com/projects/patient-portal-sand
+Frontend URL : netlify.com/projects/patient-portal-sand
 
 Digital Patient portal
 Digital Patient portal is a Mern Stack web application for booking medical lab tests. it has user registrations, test selection, booking and booking history.
