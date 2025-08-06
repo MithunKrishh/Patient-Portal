@@ -10,7 +10,6 @@ const { authenticateToken } = require('../middleware/authMiddleware');
 
 router.post('/register', createPatient);
 
-// 🔒 Protected routes (require token)
 router.post('/', authenticateToken, createPatient);
 router.get('/', authenticateToken, getAllPatients);
 router.put('/:id', authenticateToken, updatePatient);
