@@ -28,10 +28,10 @@ const seedTests = async () => {
       }
     ]);
 
-    console.log('✅ Lab tests seeded successfully!');
+    console.log('Lab tests seeded successfully!');
     process.exit(0);
   } catch (err) {
-    console.error('❌ Error seeding lab tests:', err);
+    console.error('Error seeding lab tests:', err);
     process.exit(1);
   }
 };
