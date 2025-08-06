@@ -6,7 +6,7 @@ require('dotenv').config();
 
 const bookingRoutes = require('./routes/bookingRoutes');
 const reportRoutes = require('./routes/reportRoutes');
-const testRoutes = require('./routes/testRoutes'); // ✅ Add this line
+const testRoutes = require('./routes/testRoutes'); 
 
 const app = express();
 
@@ -17,7 +17,7 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.use('/api/bookings', bookingRoutes);
 app.use('/api/reports', reportRoutes);
-app.use('/api/tests', testRoutes); // ✅ Register the route here
+app.use('/api/tests', testRoutes); 
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
