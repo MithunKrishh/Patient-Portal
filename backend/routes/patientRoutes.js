@@ -8,7 +8,6 @@ const {
 } = require('../controllers/patientController');
 const { authenticateToken } = require('../middleware/authMiddleware');
 
-// 🟢 Open route for registration (no token required)
 router.post('/register', createPatient);
 
 // 🔒 Protected routes (require token)
