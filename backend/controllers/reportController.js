@@ -5,7 +5,7 @@ const getDummyReport = (req, res) => {
 
   res.download(filePath, 'LabTestReport.pdf', (err) => {
     if (err) {
-      console.error('❌ Error downloading file:', err);
+      console.error('Error downloading file:', err);
       return res.status(500).json({ message: 'Could not download report' });
     }
   });
